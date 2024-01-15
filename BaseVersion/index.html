@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine Box</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <div class="header-content">
+      <header>
+        <div class="logo">
+          <a href="#">Magazine Box</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#home" onclick="selection()">Home</a></li>
+            <li><a href="#galery" onclick="selection()">Galery</a></li>
+            <li><a href="#products" onclick="selection() ">Products</a></li>
+            <li><a href="#contact" onclick="selection()">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="hideMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+      <div class="banner-content">
+        <h1>Magazine Box PhotoBoth</h1>
+      </div>
+    </section>
+
+    <!-- GALERY SECTION -->
+    <section id="galery" class="galery">
+      <div class="galery-content">
+        <h2>Galery</h2>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="contact-content">
+        <h2>CONTACT</h2>
+        <div class="row">
+          <!-- FORM -->
+          <div class="col">
+            <input type="text" placeholder="Your name" />
+            <input type="text" placeholder="Phone number" />
+            <input type="text" placeholder="Your email" />
+            <input type="text" placeholder="Subject" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button>Send<i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Calle Aragon, Palma de Mallorca
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamanos: 689 27 97 65
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: Ivantiz45@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

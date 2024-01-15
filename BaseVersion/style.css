@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
+}
+.header-content {
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.header-content header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.header-content header .logo a {
+  font-family: "Righteous";
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+.header-content header ul {
+  display: flex;
+  list-style: none;
+}
+.header-content header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.header-content header nav ul li a:hover {
+  color: #1cb698;
+}
+.nav-responsive {
+  background-color: #1cb698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+.home {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(img/fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.inicio .banner-content {
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+.inicio .banner-content h1 {
+  margin-top: 40px;
+  font-size: 42px;
+  font-family: "Righteous";
+}
+.contact {
+  background-image: url(img/contact_bg.png);
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 0;
+}
+.contact .contact-content {
+  max-width: 1100px;
+  margin: auto;
+}
+.contact h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.contact .row {
+  display: flex;
+}
+.contact .col {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+.contact .col input,
+.contact .col textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #252a2e;
+  color: #fff;
+  font-size: 18px;
+}
+.contact button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.contact button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 1s;
+}
+.contact button:hover .overlay {
+  width: 100%;
+}
+.contact .col img {
+  width: 100%;
+}
+.contact .col .info {
+  position: absolute;
+  top: 40%;
+  background-color: #252a2e;
+  padding: 20px;
+  max-swidth: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact .col .info ul {
+  list-style: none;
+}
+.contact .col .info ul li {
+  margin-bottom: 20px;
+}
+.contact .col .info ul li i {
+  color: #1cb698;
+  display: inline-block;
+  margin-right: 20px;
+}
