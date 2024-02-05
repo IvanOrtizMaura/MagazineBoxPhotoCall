@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Work Sans";
@@ -9,6 +10,7 @@ html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
+
 .header-content {
   background: #1e2326;
   position: fixed;
@@ -26,7 +28,7 @@ html {
   padding: 15px 20px;
 }
 .header-content header .logo a {
-  font-family: "Righteous";
+  font-family: "Bodoni Moda", serif;
   font-size: 36px;
   color: #fff;
   text-decoration: none;
@@ -44,30 +46,31 @@ html {
   text-decoration: none;
 }
 .header-content header nav ul li a:hover {
-  color: #1cb698;
+  color: #e4e4e2;
 }
 .nav-responsive {
-  background-color: #1cb698;
-  color: #fff;
+  background-color: #e4e4e2;
+  color: #000;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
   display: none;
 }
+
 .home {
   background: linear-gradient(
       to top,
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)
     ),
-    url(img/fondo.jpg);
+    url(img/Portada.jpeg);
   background-size: cover;
   height: 100vh;
   color: #fff;
   display: flex;
   align-items: center;
 }
-.inicio .banner-content {
+.home .banner-content {
   padding: 20px;
   background-color: #1e2326;
   max-width: 350px;
@@ -75,13 +78,43 @@ html {
   text-align: center;
   border-radius: 40px;
 }
-.inicio .banner-content h1 {
+.home .banner-content img {
+  margin-top: 40px;
+  border: 5px solid #a07c5a;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 10%;
+}
+.home .banner-content h1 {
   margin-top: 40px;
   font-size: 42px;
-  font-family: "Righteous";
+  font-family: "Bodoni Moda", serif;
 }
+.home .banner-content h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.home .banner-content .redes a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.home .banner-content .redes a:hover {
+  background-color: #e4e4e2;
+  color: #1e2326;
+}
+
 .gallery {
-  background-color: #252a2e;
+  background-color: #e4e4e2;
   color: #fff;
   padding: 50px 20px;
 }
@@ -90,8 +123,9 @@ html {
   margin: auto;
 }
 .gallery h2 {
+  color: #252a2e;
   font-size: 48px;
-  font-family: "Righteous";
+  font-family: "BOdoni Moda", serif;
   text-align: center;
   padding: 20px 0;
 }
@@ -155,7 +189,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1cb698;
+  background-color: #e4e4e2;
   z-index: -1;
   transition: 1s;
 }
@@ -163,9 +197,8 @@ html {
   width: 100%;
 }
 .contact {
-  background-image: url(img/contact_bg.png);
-  background-color: #1e2326;
-  color: #fff;
+  background-color: #e4e4e2;
+  color: #1e2326;
   padding: 50px 0;
 }
 .contact .contact-content {
@@ -174,11 +207,12 @@ html {
 }
 .contact h2 {
   font-size: 48px;
-  font-family: "Righteous";
+  font-family: "bodoni Moda", serif;
   text-align: center;
   padding: 20px 0;
 }
 .contact .row {
+  color: #fff;
   display: flex;
 }
 .contact .col {
@@ -193,7 +227,7 @@ html {
   padding: 18px;
   border: none;
   margin-bottom: 20px;
-  background-color: #252a2e;
+  background-color: #e6b78c;
   color: #fff;
   font-size: 18px;
 }
@@ -216,9 +250,12 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1cb698;
+  background-color: #e6b78c;
   z-index: -1;
   transition: 1s;
+}
+.contact button:hover {
+  color: #1e2326;
 }
 .contact button:hover .overlay {
   width: 100%;
@@ -242,7 +279,7 @@ html {
   margin-bottom: 20px;
 }
 .contact .col .info ul li i {
-  color: #1cb698;
+  color: #e4e4e2;
   display: inline-block;
   margin-right: 20px;
 }
