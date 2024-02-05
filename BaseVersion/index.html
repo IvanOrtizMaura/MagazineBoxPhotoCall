@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- NAVBAR SECTION -->
@@ -37,7 +43,16 @@
     <!-- HOME SECTION -->
     <section id="home" class="home">
       <div class="banner-content">
-        <h1>Magazine Box PhotoBoth</h1>
+        <div class="img-pane">
+          <img src="img/Portada.jpeg" alt="" />
+        </div>
+        <h1>MagazineBox</h1>
+        <h2>Photocall</h2>
+        <div class="redes">
+          <a href="https://www.instagram.com/magazinebox_baleares/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
       </div>
     </section>
 
@@ -108,7 +123,10 @@
               rows="10"
               placeholder="Message"
             ></textarea>
-            <button>Send <i class="fa-solid fa-paper-plane"></i></button>
+            <button>
+              Send <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
           </div>
 
           <div class="col">
