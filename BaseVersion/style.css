@@ -95,7 +95,8 @@ html {
   font-size: 15px;
   font-weight: normal;
 }
-.home .banner-content .redes a {
+
+.social a {
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -108,11 +109,45 @@ html {
   font-size: 20px;
   transition: 0.3s;
 }
-.home .banner-content .redes a:hover {
+.social a:hover {
   background-color: #e4e4e2;
   color: #1e2326;
 }
-
+.aboutus {
+  background-color: #e4e4e2;
+  color: #252a2e;
+  padding: 50px 20px;
+}
+.aboutus .aboutus-content {
+  max-width: 1100px;
+  margin: auto;
+}
+.aboutus h2 {
+  color: #252a2e;
+  font-size: 48px;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  padding: 20px 0;
+}
+.aboutus h3 {
+  color: #252a2e;
+  font-size: 30px;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  padding: 20px 0;
+}
+.aboutus p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  padding: 20px 0;
+}
+.aboutus ol {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  padding: 20px 0;
+}
 .gallery {
   background-color: #e4e4e2;
   color: #fff;
@@ -282,6 +317,29 @@ html {
   color: #e4e4e2;
   display: inline-block;
   margin-right: 20px;
+}
+footer {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer .arriba {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #1cb698;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
 }
 @media screen and (max-width: 980px) {
   nav {
