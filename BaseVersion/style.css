@@ -113,36 +113,36 @@ html {
   background-color: #e4e4e2;
   color: #1e2326;
 }
-.aboutus {
+.about-us {
   background-color: #e4e4e2;
   color: #252a2e;
   padding: 50px 20px;
 }
-.aboutus .aboutus-content {
+.about-us .about-us-content {
   max-width: 1100px;
   margin: auto;
 }
-.aboutus h2 {
+.about-us h2 {
   color: #252a2e;
   font-size: 48px;
   font-family: "Bodoni Moda", serif;
   text-align: center;
   padding: 20px 0;
 }
-.aboutus h3 {
+.about-us h3 {
   color: #252a2e;
   font-size: 30px;
   font-family: "Bodoni Moda", serif;
   text-align: center;
   padding: 20px 0;
 }
-.aboutus p {
+.about-us p {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
   padding: 20px 0;
 }
-.aboutus ol {
+.about-us ol {
   font-size: 18px;
   line-height: 30px;
   text-align: center;
