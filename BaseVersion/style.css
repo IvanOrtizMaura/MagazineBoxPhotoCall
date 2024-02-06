@@ -142,7 +142,11 @@ html {
   text-wrap: pretty;	
   padding: 20px 0;
 }
-
+.about-us .about-us-content .col1 b,
+.about-us .about-us-content .col2 b {
+  color: #A07C5A;
+  
+}
 .about-us h2 {
   color: #a07c5a;
   font-size: 48px;
