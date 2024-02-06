@@ -159,21 +159,22 @@
         <div class="row">
           <!-- FORM -->
           <div class="col">
-            <input type="text" placeholder="Your name" />
-            <input type="text" placeholder="Phone number" />
-            <input type="text" placeholder="Your email" />
-            <input type="text" placeholder="Subject" />
+            <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="89501858-3c7b-44de-878b-cdd5fd5d6107">
+            <input type="text" placeholder="Your name" name="name" required />
+            <input type="email" name="email" placeholder="Your email" required />
             <textarea
-              name=""
-              id=""
+              name="message"
+            required
               cols="30"
               rows="10"
               placeholder="Message"
             ></textarea>
-            <button>
+            <button type="submit">
               Send <i class="fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
+          </form>
           </div>
           <!-- CONTACT CARD -->
           <div class="contact-card">
