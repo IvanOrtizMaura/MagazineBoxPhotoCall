@@ -132,20 +132,18 @@ html {
   max-width: 340px;
   height: fit-content;
   margin: 10px;
-  cursor: pointer;
 }
 .about-us .about-us-content .col1 p,
 .about-us .about-us-content .col2 p {
   font-size: 18px;
   line-height: 24px;
   text-align: left;
-  text-wrap: pretty;	
+  text-wrap: pretty;
   padding: 20px 0;
 }
 .about-us .about-us-content .col1 b,
 .about-us .about-us-content .col2 b {
-  color: #A07C5A;
-  
+  color: #a07c5a;
 }
 .about-us h2 {
   color: #a07c5a;
@@ -385,21 +383,21 @@ footer .arriba {
     padding: 10px 0;
   }
 }
-@media screen and (max-width:700px){
-  .gallery .photos{
-      display: block;
-      width: 100%;
+@media screen and (max-width: 700px) {
+  .gallery .photos {
+    display: block;
+    width: 100%;
   }
-  .gallery .photos .proyecto{
-      max-width: 100%;
+  .gallery .photos .proyecto {
+    max-width: 100%;
   }
-  .gallery .photos .proyecto img{
-      width: 100%;
+  .gallery .photos .proyecto img {
+    width: 100%;
   }
-  .contact .row{
-      display: block;
+  .contact .row {
+    display: block;
   }
-  .contact .row .col{
-      width: 100%;
+  .contact .row .col {
+    width: 100%;
   }
 }
