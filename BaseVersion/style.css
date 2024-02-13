@@ -214,7 +214,13 @@ html {
   opacity: 1;
 }
 .gallery .photos .proyecto .overlay:hover h3 {
-  margin-bottom: 0px;
+  font-family: "BOdoni Moda", serif;
+  margin-bottom: 20px;
+  text-wrap: balance;
+}
+.gallery .photos .proyecto .overlay:hover p {
+  font-family: "BOdoni Moda", serif;
+  text-wrap: balance;
 }
 
 .gallery button {

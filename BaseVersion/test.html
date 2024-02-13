@@ -1,155 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magazine Box</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- NAVBAR SECTION -->
-    <div class="header-content">
-      <header>
-        <div class="logo">
-          <a href="#">MagazineBox</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/Icon.ico">
+  <title>Magazine Box</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAVBAR SECTION -->
+  <div class="header-content">
+    <header>
+      <div class="logo">
+        <a href="#">MagazineBox</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#home" onclick="selection()">Home</a></li>
+          <li><a href="#gallery" onclick="selection()">Gallery</a></li>
+          <li><a href="#about-us" onclick="selection()">About us</a></li>
+          <li><a href="#contact" onclick="selection()">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="hideMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="home">
+
+    <div class="home-content">
+      <h1>MagazineBox</h1>
+      <div class="info-content">
+        <div class="col">
+          <h3>Strike a Pose: Introducing MagazineBox Photocall</h3>
+          <p>Get ready to strike a pose with MagazineBox Photocall!
+            Our interactive backdrop sets the stage for unforgettable moments.
+            Whether it's a wedding, corporate event, or birthday bash, our Photocall
+            adds flair to every occasion. Let
+            your creativity shine and capture memories in style
+            with MagazineBox Photocall!</p>
         </div>
-        <nav id="nav">
-          <ul>
-            <li><a href="#home" onclick="selection()">Home</a></li>
-            <li><a href="#gallery" onclick="selection()">Gallery</a></li>
-            <li><a href="#contact" onclick="selection()">Contact</a></li>
-            <li><a href="#about-us" onclick="selection()">About us</a></li>
-          </ul>
-        </nav>
-        <div class="nav-responsive" onclick="hideMenu()">
-          <i class="fa-solid fa-bars"></i>
+
+        <div class="col">
+          <img src="img/MagazineBox1.jpg" alt="" style="width: 50%;">
         </div>
-      </header>
+
+        <div class="col">
+          <h3>Capture the Elegance of Every Moment.</h3>
+          <p>In MagazineBox, we don't just capture photos, we capture stories.
+            Our booth provides you with the opportunity to immerse yourself in
+            the elegance of magazine photography, creating memories that last forever.
+            Welcome to your new photographic adventure!
+          </p>
+        </div>
+
+        <div class="col">
+          <img src="img/MagazineBox2.jpg" alt="" style="width: 50%;">
+        </div>
+
+        <div class="col">
+          <h3>Space for Everyone.</h3>
+          <p>In MagazineBox, up to 8 people can enjoy the photography
+            experience together. With dimensions of h230 x l205 x D120 cm,
+            our booth provides ample space for shared fun. Immerse yourself in
+            the magic of photography with friends and family at MagazineBox!</p>
+        </div>
+
+        <div class="col">
+          <img src="img/MagazineBox3.jpg" style="width: 50%;" alt="">
+        </div>
+      </div>
+      <button id="download">Catalog <span class="overlay"></span>
+      </button>
     </div>
 
-    <!-- HOME SECTION -->
-    <section id="home" class="home">
-      <h3>Personaliza tu experiencia.</h3>
-      <p>Ajusta la portada a tu
-        gusto con ayuda
-        nuestro asesoramiento
-        personalizado.</p>
+  </section>
 
-    </section>
-
-    <!-- GALERY SECTION -->
-    <section id="gallery" class="gallery">
-      <div class="gallery-content">
-        <h2>Gallery</h2>
-        <div class="photos">
-          <div class="proyecto">
-            <img src="img/MagazineBox4.jpg" width="70%" alt="" />
-            <div class="overlay">
-              <h3>Fotos e Impresiones</h3>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/MagazineBox3.jpg" width="70%" alt="" />
-            <div class="overlay">
-              <h3>Servicio Personalizado</h3>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/MagazineBox5.jpg" width="70%" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/MagazineBox2.jpg" width="70%" alt="" />
-            <div class="overlay">
-              <h3>Diseño Personalizado</h3>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/MagazineBox6.jpg" width="70%" alt="" />
-            <div class="overlay">
-              <h3>Personal cualificado</h3>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/MagazineBox1.jpg" width="70%" alt="" />
-            <div class="overlay">
-              <h3>Galeria Digital</h3>
-            </div>
-          </div>
-
-          <!-- <button>
-            Contract <i class="fa-solid fa-phone"></i>
-            <span class="overlay"></span>
-          </button> -->
-        </div>
-      </div>
-    </section>
-     <!-- CONTACT SECTION -->
-     <section id="contact" class="contact">
-      <div class="contact-content">
-        <h2>CONTACT</h2>
-        <div class="row">
-          <!-- FORM -->
-          <div class="col">
-            <input type="text" placeholder="Your name" />
-            <input type="text" placeholder="Phone number" />
-            <input type="text" placeholder="Your email" />
-            <input type="text" placeholder="Subject" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-            <button>
-              Send <i class="fa-solid fa-paper-plane"></i>
-              <span class="overlay"></span>
-            </button>
-          </div>
-
-          <div class="banner-content">
-            <div class="img-pane">
-              <img src="img/Portada.jpeg" alt="" />
-            </div>
-            <h1>MagazineBox</h1>
-            <h2>Photocall</h2>
-            <div class="social">
-              <a href="https://www.instagram.com/magazinebox_baleares/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="mailto:magazineboxphotocall@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-              <a href="tel:634611386">
-                <i class="fa-solid fa-phone"></i>
-              </a>
-            </div>
-          </div>
+  <!-- GALERY SECTION -->
+  <section id="gallery" class="gallery">
+    <div class="gallery-content">
+      <h2>Gallery</h2>
+      <div class="photos">
+        <div class="proyecto">
+          <img src="img/MagazineBox4.jpg" width="70%" alt="" />
+          <div class="overlay">
+            <h3>Fotos e Impresiones</h3>
           </div>
         </div>
+        <div class="proyecto">
+          <img src="img/MagazineBox3.jpg" width="70%" alt="" />
+          <div class="overlay">
+            <h3>Servicio Personalizado</h3>
+          </div>
+        </div>
+        <div class="proyecto">
+          <img src="img/MagazineBox5.jpg" width="70%" alt="" />
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+          </div>
+        </div>
+
+
       </div>
-    </section>
-    <!-- ABOUT US SECTION -->
-    <section id="about-us" class="about-us">
-      <div class="about-us-content">
-        <h2>About Us</h2>
-        
+    </div>
+  </section>
+  <!-- ABOUT US SECTION -->
+  <section id="about-us" class="about-us">
+    <h2>About Us</h2>
+
+    <div class="about-us-content">
+
+      <div class="col1">
         <h3>Our Story</h3>
         <p>
           At the heart of MagazineBox is a shared passion for photography and
@@ -163,43 +135,85 @@
           choice for those looking to add a touch of fun and originality to
           their celebrations.
         </p>
+      </div>
+
+      <div class="col2">
         <h3>Our Values</h3>
-        <ol>
-          <li>
-            <b><span class="important-word-list">Creativity: </span></b>We are passionate about innovation and always
-            seek new ways to make each event unique.
-          </li>
-          <li>
-            <b><span class="important-word-list">Commitment:</span></b> We are committed to providing exceptional
-            service, from setup to the final delivery of photographs.
-          </li>
-          <li>
-            <b><span class="important-word-list">Fun: </span></b> We take fun seriously. We believe that every event
-            should have a touch of joy, and we strive to bring smiles to
-            everyone who interacts with MagazineBox.
-          </li>
+        <p>
+          <b>Creativity: </b>We are passionate about innovation and always
+          seek new ways to make each event unique.
+        </p>
+        <p>
+          <b>Commitment: </b>We are committed to providing exceptional
+          service, from setup to the final delivery of photographs.
+        </p>
+        <p>
+          <b>Fun:</b> We take fun seriously. We believe that every event
+          should have a touch of joy, and we strive to bring smiles to
+          everyone who interacts with MagazineBox.
+        </p>
         </ol>
       </div>
-    </section>
-   
-    <!-- footer -->
-    <footer>
-      <a href="#home" class="arriba">
-        <i class="fa-solid fa-angles-up"></i>
-      </a>
-      <div class="social">
-        <a href="https://www.instagram.com/magazinebox_baleares/"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="mailto:magazineboxphotocall@gmail.com">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="tel:634611386">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-      </div>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
-  </body>
+  </section>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="contact-content">
+      <h2>Contact</h2>
+      <div class="row">
+        <!-- FORM -->
+        <div class="col">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="89501858-3c7b-44de-878b-cdd5fd5d6107">
+            <input type="text" placeholder="Your name" name="name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" required cols="30" rows="10" placeholder="Message"></textarea>
+            <button type="submit">
+              Send <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </form>
+        </div>
+        <!-- CONTACT CARD -->
+        <div class="contact-card">
+          <div class="img-pane">
+            <img src="img/Portada.jpeg" alt="" />
+          </div>
+          <h1>MagazineBox</h1>
+          <h2>Photocall</h2>
+          <div class="social">
+            <a href="https://www.instagram.com/magazinebox_baleares/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:magazineboxphotocall@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:634611386" target="_blank">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <a href="#home" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="social">
+      <a href="https://www.instagram.com/magazine_box_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:magazineboxphotocall@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="tel:634611386" target="_blank">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
