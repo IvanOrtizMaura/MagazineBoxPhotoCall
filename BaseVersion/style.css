@@ -312,7 +312,7 @@ textarea {
   transition: 1s;
 }
 .contact button:hover {
-  color: #1e2326;
+  color: #fff;
 }
 .contact button:hover .overlay {
   width: 100%;
