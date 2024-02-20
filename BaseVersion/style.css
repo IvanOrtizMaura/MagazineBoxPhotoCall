@@ -291,13 +291,13 @@ textarea {
 .contact button {
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #d0bead;
   width: fit-content;
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
-  color: #fff;
+  color: #d0bead;
   position: relative;
   z-index: 10;
 }
@@ -312,7 +312,7 @@ textarea {
   transition: 1s;
 }
 .contact button:hover {
-  color: #1e2326;
+  color: #fff;
 }
 .contact button:hover .overlay {
   width: 100%;
