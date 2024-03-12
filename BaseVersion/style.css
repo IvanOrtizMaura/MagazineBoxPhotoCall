@@ -221,6 +221,7 @@ html {
 .gallery .photos .proyecto .overlay:hover p {
   font-family: "BOdoni Moda", serif;
   text-wrap: balance;
+  padding: 10px;
 }
 
 .gallery button {
