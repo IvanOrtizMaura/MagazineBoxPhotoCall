@@ -1,0 +1,15 @@
+:host ::ng-deep .p-menubar {
+  border: none !important;
+  background: transparent !important;
+
+  .p-menuitem-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    color: #111;
+  }
+
+  .p-menuitem-link:hover {
+    color: #000;
+  }
+}
